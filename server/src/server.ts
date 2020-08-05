@@ -1,8 +1,13 @@
 import express from "express";
+import cors from "cors";
+import routes from "./routes";
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
+
+app.use(routes);
 
 //localhost:3333/users
 //localhost:3333/contacts
@@ -16,9 +21,9 @@ app.use(express.json());
 //Route Params: Identificar qual recurso eu quero atualizar ou deletar
 //Query Params: Paginação, filtros, ordenação
 
-app.get("/", (request, response) => {
-  return response.json({ massage: "hello world" });
-});
+// app.get("/", (request, response) => {
+//   return response.json({ massage: "hello world" });
+// });
 
 //localhost:3333
 
