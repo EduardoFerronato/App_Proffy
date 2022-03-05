@@ -26,12 +26,12 @@
 .buttons-container {
   display: flex;
   justify-content: center;
-  margin: 3.2rem 0;
+  margin: 3rem 0;
 }
 
 .buttons-container a {
-  width: 30rem;
-  height: 10.4rem;
+  width: 25rem;
+  height: 10rem;
   border-radius: 0.8rem;
   font: 700 2rem Archivo;
 
